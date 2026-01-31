@@ -3,23 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Cuneta - Merchan</title>
+    <title>La Cuneta - Merchan Rock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <style>
-        body { background-color: #1a1a1a; color: #f5f5dc; font-family: 'Arial', sans-serif; text-align: center; padding: 20px; }
-        .logo { max-width: 200px; margin-top: 20px; }
-        h1 { color: #fff; text-transform: uppercase; letter-spacing: 2px; }
-        .promo-box { border: 2px dashed #f5f5dc; padding: 20px; margin: 20px auto; max-width: 400px; }
-        .btn { background: #f5f5dc; color: #1a1a1a; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; margin-top: 10px; }
+        :root {
+            --rock-black: #121212;
+            --rock-red: #cc0000;
+            --rock-cream: #f5f5dc;
+            --rock-grey: #333;
+        }
+
+        body { 
+            background-color: var(--rock-black); 
+            background-image: url('https://www.transparenttextures.com/patterns/dark-leather.png'); /* Textura sutil de cuero */
+            color: var(--rock-cream); 
+            font-family: 'Roboto Condensed', sans-serif; 
+            text-align: center; 
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            padding: 40px 20px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+        }
+
+        h1 { 
+            font-family: 'Permanent Marker', cursive;
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 3px 3px 0px var(--rock-red);
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            color: var(--rock-red);
+            margin-top: 10px;
+        }
+
+        .main-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Espacio para TU FOTO */
+        .featured-image {
+            width: 100%;
+            border: 5px solid var(--rock-grey);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+            margin-bottom: 30px;
+            /* Si ya tienes la imagen, cambia 'taza_cuneta.jpg' por el nombre de tu archivo */
+            content: url('TU_IMAGEN_AQUI.jpg'); 
+            display: block;
+        }
+
+        .promo-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-left: 5px solid var(--rock-red);
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .promo-section h2 {
+            margin: 0;
+            color: #fff;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .price-tag {
+            background: var(--rock-red);
+            color: white;
+            padding: 5px 10px;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+            transform: rotate(-2deg);
+        }
+
+        .upcoming {
+            opacity: 0.6;
+            font-style: italic;
+            border: 1px dashed var(--rock-cream);
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        .btn { 
+            background: var(--rock-cream); 
+            color: var(--rock-black); 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            text-transform: uppercase;
+            border-radius: 0px; 
+            display: inline-block; 
+            margin-top: 30px;
+            transition: 0.3s;
+            box-shadow: 5px 5px 0px var(--rock-red);
+        }
+
+        .btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px var(--rock-red);
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 30px;
+            font-size: 0.9rem;
+            background: #000;
+        }
     </style>
 </head>
 <body>
-    <h1>🎸 La Cuneta Rock-Café</h1>
-    <div class="promo-box">
-        <h2>¿Tienes 9 tarjetas llenas?</h2>
-        <p>¡Canjéalas por nuestra <strong>Camiseta Oficial</strong> o una Gorra de La Cuneta!</p>
-        <p>Pídelo en barra al entregar tus tarjetas.</p>
+
+    <header>
+        <h1>LA CUNETA</h1>
+        <div class="subtitle">ROCK-CAFÉ & MERCHAN</div>
+    </header>
+
+    <div class="main-container">
+        <img src="https://via.placeholder.com/600x600?text=Sube+aquí+tu+foto+de+la+taza" class="featured-image" alt="Merchan La Cuneta">
+
+        <h2 style="font-family: 'Permanent Marker'; color: var(--rock-red);">AHORRA TUS TARJETAS</h2>
+        <p>No las tires, júntalas y llévate el equipo oficial del pub.</p>
+
+        <div class="promo-section">
+            <h2>🍺 JARRA DE CERVEZA</h2>
+            <p>Disfruta tu birra como un auténtico rockero.</p>
+            <div class="price-tag">CANJEA 3 TARJETAS COMPLETAS</div>
+        </div>
+
+        <div class="promo-section">
+            <h2>👕 CAMISETA O GORRA OFICIAL</h2>
+            <p>Lleva el logo de La Cuneta a todas partes.</p>
+            <div class="price-tag">CANJEA 9 TARJETAS COMPLETAS</div>
+        </div>
+
+        <div class="upcoming">
+            <h3>⚡ PRÓXIMAMENTE MÁS MERCHAN...</h3>
+            <p>Sudaderas, parches y sorpresas. ¡Sigue sellando!</p>
+        </div>
+
+        <a href="https://instagram.com/tu_usuario" class="btn">Síguenos en Instagram</a>
     </div>
-    <p>📍 Calle Elvira, Granada</p>
-    <a href="https://instagram.com/tu_usuario" class="btn">Síguenos en Instagram</a>
+
+    <footer>
+        <p>📍 Calle Elvira, Granada</p>
+        <p>Rock & Roll All Night 🎸</p>
+    </footer>
+
 </body>
 </html>
