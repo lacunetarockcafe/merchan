@@ -22,7 +22,6 @@ const App: React.FC = () => {
           </div>
 
           <div style={{ textAlign: 'left' }}>
-            <div style={{ fontSize: '3.5rem', marginBottom: '0.5rem' }}>🍺</div>
             <div className="rock-subtitle" style={{ fontSize: '2.5rem' }}>3 TARJETAS = 1 JARRA</div>
           </div>
         </div>
