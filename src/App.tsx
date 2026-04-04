@@ -3,8 +3,8 @@ import React from 'react';
 const App: React.FC = () => {
   return (
     <div className="main-container">
-      {/* Main Logo (Styled via CSS to be white) */}
-      <img src="./assets/logo.png" alt="La Cuneta Rock-Café Logo" className="logo-main" />
+      {/* Main Logo */}
+      <img src="assets/logo.png" alt="La Cuneta Rock-Café Logo" className="logo-main" />
 
       <div className="rock-subtitle">
         AHORRA TUS TARJETAS Y CAMBIA POR MERCHAN
@@ -12,24 +12,40 @@ const App: React.FC = () => {
 
       {/* Main Wood Frame Display */}
       <div className="wood-frame">
-        <div style={{ display: 'flex', gap: '2rem', alignItems: 'center', justifyContent: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
-          <div style={{ position: 'relative' }}>
+        {/* Rewards Row */}
+        <div style={{
+          display: 'flex',
+          gap: '2rem',
+          justifyContent: 'space-around',
+          alignItems: 'flex-start',
+          flexWrap: 'wrap',
+          marginBottom: '3rem'
+        }}>
+          {/* MUG Section */}
+          <div style={{ textAlign: 'center', flex: '1', minWidth: '250px' }}>
             <img
-              src="./assets/mug.jpg"
+              src="assets/mug.jpg"
               alt="La Cuneta Mug"
-              style={{ width: '320px', borderRadius: '10px', boxShadow: '0 10px 20px rgba(0,0,0,0.5)' }}
+              style={{ width: '100%', maxWidth: '280px', borderRadius: '10px', boxShadow: '0 10px 20px rgba(0,0,0,0.5)', marginBottom: '1rem' }}
             />
+            <div className="rock-subtitle" style={{ fontSize: '1.8rem' }}>3 TARJETAS = 1 JARRA</div>
           </div>
 
-          <div style={{ textAlign: 'left' }}>
-            <div className="rock-subtitle" style={{ fontSize: '2.5rem' }}>3 TARJETAS = 1 JARRA</div>
+          {/* T-SHIRT Section */}
+          <div style={{ textAlign: 'center', flex: '1', minWidth: '250px' }}>
+            <img
+              src="assets/tshirt.png"
+              alt="La Cuneta T-Shirt"
+              style={{ width: '100%', maxWidth: '280px', borderRadius: '10px', boxShadow: '0 10px 20px rgba(0,0,0,0.5)', marginBottom: '1rem' }}
+            />
+            <div className="rock-subtitle" style={{ fontSize: '1.8rem' }}>5 TARJETAS = 1 CAMISETA</div>
           </div>
         </div>
 
         {/* Sealed Loyalty Card Implementation */}
-        <div style={{ maxWidth: '650px', margin: '3rem auto' }}>
+        <div style={{ maxWidth: '650px', margin: '0 auto' }}>
           <img
-            src="./assets/card_sealed.jpg"
+            src="assets/card_sealed.jpg"
             alt="Tarjeta de Fidelización Sellada"
             style={{ width: '100%', borderRadius: '15px', boxShadow: '0 15px 35px rgba(0,0,0,0.8)' }}
           />
