@@ -28,7 +28,7 @@ const App: React.FC = () => {
               alt="La Cuneta Mug"
               style={{ width: '100%', maxWidth: '280px', borderRadius: '10px', boxShadow: '0 10px 20px rgba(0,0,0,0.5)', marginBottom: '1rem' }}
             />
-            <div className="rock-subtitle" style={{ fontSize: '1.8rem' }}>3 TARJETAS = 1 JARRA</div>
+            <div className="rock-subtitle" style={{ fontSize: '1.8rem' }}>3 TARJETAS = 1 TAZA</div>
           </div>
 
           {/* T-SHIRT Section */}
